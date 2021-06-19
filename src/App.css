@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  margin: 0%;
   min-height: 100vh;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+
+.App .title{
+  color : #2575fc;
+  letter-spacing: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container h3{
+  margin: 0%;
+  color: #2575fc;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.btn-container{
+  min-width:70vh;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container button{
+  padding: 10px 40px;
   color: white;
+  background-color: #2575fc;
+  border: 2px solid #2575fc;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+form{
+  min-width:70vh;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form div{
+  min-width: 40vh;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form div label{
+  color: #2575fc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form div input{
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form button{
+  width: 40vh;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+  border-radius: 100px;
+  background-color: #2575fc;
+  border: 2px solid #2575fc;
+  color: white;
+  cursor: pointer;
+}
+
+.display-pass{
+  display: flex;
+}
+
+.display-pass .pass{
+  width: 350px;
+  height: 40px;
+  color: #2575fc;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+  border: 2px solid #2575fc;
+  border-right: 0px;
+  background-color: #e7f0fd;
+  border-radius: 50px 0px 0px 50px;
+  text-align: center;
+}
+
+.display-pass .copy{
+  height: 40px;
+  width: 5vh;
+  border: 2px solid #2575fc;
+  background-color: #e7f0fd;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2575fc;
+  border-radius: 0px 50px 50px 0px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.btn-container button:hover, form button:hover{
+  background-color: #e7f0fd;
+  color: #2575fc;
+  transition: background-color 2ms ease-out;
+}
+
+.display-pass .copy:hover{
+  color: white;
+  background-color: #2575fc;
 }
